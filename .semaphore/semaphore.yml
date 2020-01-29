@@ -22,5 +22,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - cd blink
             - xcodebuild
