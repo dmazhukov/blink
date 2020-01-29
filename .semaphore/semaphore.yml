@@ -9,12 +9,10 @@ blocks:
     dependencies: []
     task:
       jobs:
-        - name: init submodules
+        - name: init
           commands:
             - git submodule init
             - git submodule update
-        - name: init frameworks
-          commands:
             - cd blink && ./get_frameworks.sh
   - name: build
     dependencies:
@@ -23,4 +21,5 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
+            - cd blink
             - xcodebuild
