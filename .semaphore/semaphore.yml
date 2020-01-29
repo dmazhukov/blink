@@ -14,7 +14,7 @@ blocks:
             - checkout
             - git submodule init
             - git submodule update
-            - cd blink && ./get_frameworks.sh
+            - ./get_frameworks.sh
   - name: build
     dependencies:
       - Init
